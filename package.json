@@ -15,10 +15,11 @@
     "url": "https://github.com/andreritti/api-alunos/issues"
   },
   "homepage": "https://github.com/andreritti/api-alunos#readme",
-  "description": "",
   "dependencies": {
     "express": "^5.1.0",
     "nodemon": "^3.1.10"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {},
+  "description": ""
 }

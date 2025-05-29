@@ -43,7 +43,7 @@ server.get("/alunos/:id", (req, res)=> {
     res.sendStatus(404);
   }
   else {
-    res.json(carros[indexAluno]);
+    res.json(alunos[indexAluno]);
   }
 })
 
@@ -61,7 +61,7 @@ if (indexAluno == -1) {
   }
 })
 
-server.delete("/alunos/id", (req, res) => {
+server.delete("/alunos/:id", (req, res) => {
   const indexAluno = alunos.findIndex(aluno => aluno.id === Number(req.params.id));
   if (indexAluno == -1) {
     res.sendStatus(404);
